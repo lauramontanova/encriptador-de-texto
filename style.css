@@ -3,31 +3,22 @@ body{
 }
 header img{
     /*logo*/
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-
     position: absolute;
     width: 120px;
     height: 48px;
-    left: 40px;
-    top: 40px;
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    left: 2.77%;
+    top: 3.9%;
  }
- input{
+ textarea{
     /* Ingrese el texto aqui */
     position: absolute;
-    width: 680px;
-    left: 240px;
-    top: 168px;
+    width: 47.2%;
+    height: 63.5%;
+    left: 16.66%;
+    top: 16.41%;
 
     font-family: 'Inter';
-    font-size: 32px;
+    font-size: 2em;
     line-height: 150%;
 
     background: none;
@@ -43,10 +34,10 @@ header img{
     gap: 8px;
 
     position: absolute;
-    width: 229px;
-    height: 18px;
-    left: 240px;
-    top: 851px;
+    /*width: 229px;
+    height: 18px;*/
+    left: 16.66%;
+    top: 83.1%;
 
     font-family: 'Inter';
     font-style: normal;
@@ -71,16 +62,16 @@ header img{
     gap: 24px;
 
     position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
+    width: 47.2%;
+    height: 6.5%;
+    left: 16.66%;
+    top: 86.43%;
 }
 #encriptar{
     box-sizing: border-box;
     
-    width: 328px;
-    height: 67px;
+    width: 48.3%;
+    height: 100%;
     
     background: #0A3871;
     color: #F3F5FC;
@@ -98,8 +89,8 @@ header img{
 #desencriptar{
     box-sizing: border-box;
     
-    width: 328px;
-    height: 67px;
+    width: 48.3%;
+    height: 100%;
     /* Light gray */
     background: #D8DFE8;
     color: #0A3871;
@@ -118,9 +109,9 @@ header img{
 .rectangulo{
     position: absolute;
     width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
+    height: 92.18%;
+    left: 69.4%;
+    top: 3.9%;
     /* White */
     background: #FFFFFF;
     /* shadow */
@@ -129,8 +120,8 @@ header img{
 }
 .rectangulo img {
     position: absolute;
-    left: 32px;
-    top: 243px;
+    left: 8%;
+    top: 25.7%;
 }
 .parrafos{
     display: flex;
@@ -140,8 +131,8 @@ header img{
     gap: 16px;
 
     position: absolute;
-    left: 32px;
-    top: 579px;
+    left: 8%;
+    top: 61.3%;
 }
 #parrafo1{
     /* Ningún mensaje fue encontrado */
@@ -180,10 +171,10 @@ header img{
 output{
     display: none;
     position: absolute;
-    width: 336px;
-    height: 781px;
-    left: 32px;
-    top: 32px;
+    width: 84%;
+    height: 82.7%;
+    left: 8%;
+    top: 3.4%;
 
     font-family: 'Inter';
     font-size: 24px;
@@ -194,17 +185,13 @@ output{
     /* Button */
     box-sizing: border-box;
     /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
-    gap: 8px;
 
     position: absolute;
-    width: 336px;
-    height: 67px;
-    left: 32px;
-    top: 845px;
+    width: 84%;
+    height: 6.5%;
+    left: 8%;
+    top: 89.5%;
 
     font-family: 'Inter';
     font-size: 16px;
@@ -218,10 +205,9 @@ output{
     position: absolute;
     width: 229px;
     height: 18px;
-    left: 500px;
-    top: 1000px;
+    left: 34.7%;
+    top: 97.6%;
 
     color: #495057;
     opacity: 0.8;
- }
- /*comentario*/
+}
