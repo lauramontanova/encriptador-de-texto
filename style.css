@@ -4,12 +4,11 @@ body{
 header img{
     /*logo*/
     position: absolute;
-    width: 120px;
-    height: 48px;
+    width: 8%;
     left: 2.77%;
     top: 3.9%;
  }
- textarea{
+ .inicio{
     /* Ingrese el texto aqui */
     position: absolute;
     width: 47.2%;
@@ -24,6 +23,11 @@ header img{
     background: none;
     border: none;
     outline: none;
+    color: #0A3871;
+    resize: none;
+}
+::placeholder {
+    color: #0A3871;
 }
 .aviso{
     /* Solo letras minúsculas y sin acentos */
@@ -82,6 +86,7 @@ header img{
     order: 0;
     flex-grow: 0;
     font-size: 100%;
+    cursor: pointer;
 }
 #encriptar:hover{
     transform: scale(1.05);
@@ -102,6 +107,7 @@ header img{
     order: 1;
     flex-grow: 0;
     font-size: 100%;
+    cursor: pointer;
 }
 #desencriptar:hover{
     transform: scale(1.05);
@@ -136,7 +142,7 @@ header img{
 }
 #parrafo1{
     /* Ningún mensaje fue encontrado */
-    width: 336px;
+    width: 90%;
     height: 58px;
 
     font-family: 'Inter';
@@ -153,7 +159,7 @@ header img{
 }
 #parrafo2{
     /* Ingresa el texto que desees encriptar o desencriptar. */
-    width: 336px;
+    width: 90%;
     height: 48px;
 
     font-family: 'Inter';
@@ -168,7 +174,7 @@ header img{
     align-self: stretch;
     flex-grow: 0;
 }
-output{
+.resultado{
     display: none;
     position: absolute;
     width: 84%;
@@ -177,14 +183,17 @@ output{
     top: 3.4%;
 
     font-family: 'Inter';
-    font-size: 24px;
+    font-size: 2em;
     line-height: 150%;
     color: #495057;
+    border: none;
+    outline: none;
+    resize: none;
 }
 #copiar{
-    /* Button */
-    box-sizing: border-box;
-    /* Auto layout */
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
     padding: 24px;
 
     position: absolute;
@@ -194,12 +203,16 @@ output{
     top: 89.5%;
 
     font-family: 'Inter';
-    font-size: 16px;
+    font-size: 100%;
     /* Dark blue/dark-blue-300 */
     background: #FFFFFF;
     color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
+    cursor: pointer;
+}
+#copiar:hover{
+    transform: scale(1.05);
 }
  footer{
     position: absolute;
@@ -210,4 +223,144 @@ output{
 
     color: #495057;
     opacity: 0.8;
-}
+ }
+ @media only screen and (max-width: 1024px) {
+    /* styles for tablets*/
+    header img{
+        /*logo*/
+        width: 18%;
+        left: 0.5%;
+        top: 3.4%;
+    }
+    .inicio{
+        /* Ingrese el texto aqui */
+        width: 89%;
+        height: 34.1%;
+        left: 5.2%;
+        top: 20.4%;
+    }
+    .aviso{
+        /* Solo letras minúsculas y sin acentos */
+        /*width: 229px;
+        height: 18px;*/
+        left: 5.2%;
+        top: 61.2%;
+    }
+    .botones{
+        width: 89%;
+        height: 5.7%;
+        left: 5.2%;
+        top: 64.1%;
+    }
+    .rectangulo{
+        flex-direction: column;
+        align-items: stretch;
+        padding: 32px;
+        gap: 32px;
+
+        position: absolute;
+        width: 81%;
+        height: 11.3%;
+        left: 5.2%;
+        top: 75.3%;
+    }
+    .rectangulo img {
+        display: none;
+    }
+    .parrafos{
+        width: 90.6%;
+        height: 51.8%;
+        left: 4.6%;
+        top: 22%;
+    }
+    #parrafo1,#parrafo2{
+        width: 100%;
+    }
+    .resultado{
+        display: none;
+        width: 90.6%;
+        height: 51.5%;
+        left: 4.6%;
+        top: 14.1%;
+    }
+    #copiar{
+        width: 90.6%;
+        height: 19.5%;
+        left: 4.6%;
+        top: 61.1%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    /* styles for smartphones and smaller screens */
+    header img{
+        /*logo*/
+        width: 18%;
+        left: 0.5%;
+        top: 3.4%;
+    }
+    .inicio{
+        /* Ingrese el texto aqui */
+        width: 91%;
+        height: 18.1%;
+        left: 4.2%;
+        top: 16.3%;
+    }
+    .aviso{
+        /* Solo letras minúsculas y sin acentos */
+        /*width: 229px;
+        height: 18px;*/
+        left: 4.2%;
+        top: 38.4%;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 91%;
+        height: 6.5%;
+        left: 4.2%;
+        top: 41.9%;
+    }
+    #encriptar,#desencriptar{
+        width: 100%;
+    }
+    .rectangulo{
+        flex-direction: column;
+        align-items: stretch;
+        padding: 32px;
+        gap: 32px;
+
+        position: absolute;
+        width: 74%;
+        height: 19.9%;
+        left: 4.2%;
+        top: 65.7%;
+    }
+    .rectangulo img {
+        display: none;
+    }
+    .parrafos{
+        width: 90.6%;
+        height: 51.8%;
+        left: 4.6%;
+        top: 15%;
+        
+    }
+    #parrafo1,#parrafo2{
+        width: 100%;
+    }
+    .resultado{
+        display: none;
+        width: 90.6%;
+        height: 51.5%;
+        left: 4.6%;
+        top: 7%;
+    }
+    #copiar{
+        width: 90.6%;
+        height: 19.5%;
+        left: 4.6%;
+        top: 67%;
+    }
+  }
